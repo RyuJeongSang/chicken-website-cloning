@@ -1,0 +1,103 @@
+header {
+  height: 130px;
+  display: flex;
+  position: relative;
+  background-color: #fff6c3;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.title {
+  font-family: "SaenggeoJincheon";
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  margin: 0;
+  color: #dc0000;
+  transition: transform 0.1s linear;
+}
+.title p {
+  margin: 0;
+  font-size: 13pt;
+  color: black;
+}
+.title a {
+  text-decoration: none;
+}
+.title a:visited {
+  color: #dc0000;
+}
+.title:hover {
+  transform: scale(1.1);
+}
+
+.tnb {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  background-color: #555555;
+  color: #dddddd;
+  font-size: 10pt;
+  border-radius: 0 0 10px 10px;
+  margin: 0;
+  padding: 10px 7px 4px 7px;
+  cursor: pointer;
+}
+
+.tnb li:first-child {
+  margin-right: 10px;
+}
+
+.overseas-business {
+  right: 180px;
+  background-color: #dc0000;
+  color: white;
+}
+
+.gnb {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 80px;
+}
+.gnb a {
+  text-decoration: none;
+  color: #850000;
+  transition: color 0.2s ease-in-out;
+}
+.gnb a:visited {
+  color: #850000;
+}
+.gnb li {
+  padding: 0 20px;
+  border-right: 3px solid #cccccc;
+  font-size: 13pt;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.gnb li:last-child {
+  border-right: none;
+}
+.gnb a:hover {
+  color: #ffdb89;
+}
+
+.call-number {
+  margin-bottom: 10px;
+}
+.call-number p {
+  margin: 0;
+  font-size: 10pt;
+  margin-bottom: 3px;
+}
+.call-number p:last-child {
+  font-size: 20pt;
+  font-weight: 600;
+  color: #dc0000;
+}

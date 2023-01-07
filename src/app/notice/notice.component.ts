@@ -9,8 +9,16 @@ import { faClose } from '@fortawesome/free-solid-svg-icons';
 export class NoticeComponent {
   faClose = faClose;
   visible: boolean = true;
+  animation: boolean = false;
+
+  public getAnimation = () => {
+    return this.animation ? { startAnimation: true } : { endAnimation: true };
+  };
 
   public onClickVisible = () => {
-    this.visible = false;
+    this.animation = true;
+    setTimeout(() => {
+      this.visible = false;
+    }, 500);
   };
 }

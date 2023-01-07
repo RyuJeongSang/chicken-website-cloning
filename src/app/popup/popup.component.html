@@ -1,0 +1,13 @@
+<article *ngIf="isVisible">
+  <img src="../../assets/images/popup-chicken.jpg" alt="image" />
+  <div class="popup-footer">
+    <label>
+      <mat-checkbox (change)="checkboxValue($event)">
+        오늘하루그만보기
+      </mat-checkbox>
+    </label>
+    <button (click)="onClick()">
+      <fa-icon [icon]="faClose"></fa-icon>
+    </button>
+  </div>
+</article>
